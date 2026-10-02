@@ -1,0 +1,152 @@
+<main class="about-page">
+
+     <link rel="stylesheet" href="styles.css">
+    
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #111111;
+        }
+
+        /* Navigation */
+        nav {
+            width: 100%;
+            padding: 30px 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #111111;
+            font-size: 15px;
+            font-weight: 500;
+            transition: opacity 0.2s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.5;
+        }
+
+        /* Homepage */
+        .hero {
+            height: calc(100vh - 90px);
+            display: flex;
+            align-items: center;
+             padding: 0 50px 100px;
+        }
+
+        .hero h1 {
+            font-size: clamp(80px, 13vw, 200px);
+            line-height: 0.85;
+            font-weight: 700;
+            letter-spacing: -7px;
+        }
+
+        /* Optional subtitle */
+        .hero p {
+            margin-top: 30px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 25px;
+                justify-content: flex-start;
+            }
+
+            nav ul {
+                gap: 18px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .hero {
+                padding: 0 25px;
+            }
+
+            .hero h1 {
+                font-size: 18vw;
+                letter-spacing: -3px;
+            }
+        }
+    </style>
+    
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+             <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- WORK TITLE -->
+
+    <header class="work-header">
+        <h1> &nbsp;ABOUT</h1>
+         <p>
+            Graphic designer focused on branding, soical media, and visual identity. 
+        </p>
+
+    </header>
+
+
+
+    <section class="about-content">
+
+        <div class="about-text">
+            <p>
+                I'm Avery McAllister, a graphic designer with a passion for
+                branding, logos, social media, and creating strong visual
+                identities. I enjoy working across different styles and
+                platforms to create designs that are both visually engaging
+                and purposeful. My work includes social media graphics,
+                logos, posters, and other brand-centered projects, allowing
+                me to continue developing a versatile and well-rounded
+                portfolio.
+            </p><br>
+             <p>
+               I’m currently a senior at Concordia University Wisconsin,
+                 where I’m studying Graphic Design and Marketing. Combining 
+                 these two areas has helped me understand both the creative 
+                 and strategic sides of design. Through my coursework and 
+                 hands-on projects, I’ve developed skills in branding, visual 
+                 communication, and marketing while learning how thoughtful d
+                 esign can help a brand connect with its audience.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="images/optimized/new-8429-1280.webp" alt="Avery McAllister" srcset="images/optimized/new-8429-640.webp 426w, images/optimized/new-8429-1280.webp 852w" sizes="(max-width: 800px) 50vw, 25vw" width="4024" height="6048" decoding="async">
+        </div>
+        <div class="about-image">
+        </div>
+        
+        <img src="images/optimized/avery-1280.webp" class="corner-logo" alt="Avery McAllister logo" srcset="images/optimized/avery-640.webp 640w, images/optimized/avery-1280.webp 1280w" sizes="500px" width="8000" height="4500" decoding="async">
+
+    </section>
+
+</main>

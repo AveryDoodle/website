@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Work | Avery McAllister</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #111111;
+        }
+
+        /* Navigation */
+        nav {
+            width: 100%;
+            padding: 30px 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #111111;
+            font-size: 15px;
+            font-weight: 500;
+            transition: opacity 0.2s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.5;
+        }
+
+        /* Homepage */
+        .hero {
+            height: calc(100vh - 90px);
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .hero h1 {
+            font-size: clamp(80px, 13vw, 200px);
+            line-height: 0.85;
+            font-weight: 700;
+            letter-spacing: -7px;
+        }
+
+        /* Optional subtitle */
+        .hero p {
+            margin-top: 30px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 25px;
+                justify-content: flex-start;
+            }
+
+            nav ul {
+                gap: 18px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .hero {
+                padding: 0 25px;
+            }
+
+            .hero h1 {
+                font-size: 18vw;
+                letter-spacing: -3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <!-- NAVIGATION -->
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+             <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- WORK TITLE -->
+
+    <header class="work-header">
+        <h1>&nbsp;&nbsp;&nbsp;WORK</h1>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A selection of graphic design, social media,
+            publication, branding, and fine art work.
+        </p>
+    </header>
+
+
+   <!-- CUW FOOTBALL -->
+
+<section class="work-section">
+
+    <div class="section-title">
+        <h2>CUW Football Graphics</h2>
+        <p>Social Media + Graphic Design</p>
+    </div>
+
+    <div class="carousel">
+
+        <!-- LEFT ARROW -->
+        <button class="arrow left-arrow"
+                onclick="scrollWork(this, -1)">
+            &#10094;
+        </button>
+
+
+        <!-- ALL IMAGES -->
+        <div class="work-grid">
+
+
+            <!-- PROJECT 1 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/optimized/game-week-full.webp',
+                    'Game Week',
+                    'Social Media + Graphic Design',
+                    'A game week social media graphic created for CUW Football.'
+                 )">
+
+                <img src="images/optimized/game-week-1280.webp"
+                     alt="CUW Football Game Week graphic" srcset="images/optimized/game-week-640.webp 512w, images/optimized/game-week-1280.webp 1024w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="3000" height="3750" decoding="async" loading="lazy">
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/optimized/good-luck-full.webp',
+                    'Good Luck',
+                    'Social Media + Graphic Design',
+                    'A social media graphic created for CUW Football.'
+                 )">
+
+                <img src="images/optimized/good-luck-1280.webp"
+                     alt="CUW Football Good Luck graphic" srcset="images/optimized/good-luck-640.webp 512w, images/optimized/good-luck-1280.webp 1024w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="4500" height="5625" decoding="async" loading="lazy">
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/optimized/100-wims-full.webp',
+                    '100 Wins',
+                    'Social Media + Graphic Design',
+                    'A milestone graphic created to recognize 100 wins for CUW Football.'
+                 )">
+
+                <img src="images/optimized/100-wims-1280.webp"
+                     alt="CUW Football 100 Wins graphic" srcset="images/optimized/100-wims-640.webp 512w, images/optimized/100-wims-1280.webp 1024w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="4500" height="5625" decoding="async" loading="lazy">
+
+            </div>
+
+
+            <!-- PROJECT 4 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/optimized/homecoming-full.webp',
+                    'Homecoming',
+                    'Social Media + Graphic Design',
+                    'A homecoming promotional graphic created for CUW Football.'
+                 )">
+
+                <img src="images/optimized/homecoming-1280.webp"
+                     alt="CUW Football Homecoming graphic" srcset="images/optimized/homecoming-640.webp 512w, images/optimized/homecoming-1280.webp 1024w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="3000" height="3750" decoding="async" loading="lazy">
+
+            </div>
+
+
+            <!-- PROJECT 5 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/optimized/captains-full.webp',
+                    'Team Captains',
+                    'Social Media + Graphic Design',
+                    'A social media graphic highlighting the CUW Football team captains.'
+                 )">
+
+                <img src="images/optimized/captains-1280.webp"
+                     alt="CUW Football Captains graphic" srcset="images/optimized/captains-640.webp 512w, images/optimized/captains-1280.webp 1024w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="3000" height="3750" decoding="async" loading="lazy">
+
+            </div>
+
+
+        </div>
+
+
+        <!-- RIGHT ARROW -->
+        <button class="arrow right-arrow"
+                onclick="scrollWork(this, 1)">
+            &#10095;
+        </button>
+
+    </div>
+
+
+        
+
+    <!-- OKTOROCKET -->
+
+<section style="margin-top: 100px;">
+
+    <div class="section-title">
+        <h2>Oktorocket Graphics</h2>
+        <p>Social Media + Graphic Design</p>
+    </div>
+
+    <div class="carousel">
+
+        <!-- LEFT ARROW -->
+        <button class="arrow left-arrow"
+                onclick="scrollWork(this, -1)">
+            &#10094;
+        </button>
+
+
+        <!-- ALL IMAGES -->
+        <div class="work-grid">
+
+
+            <!-- PROJECT 1 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/optimized/mobile-app-2-full.webp',
+                    'Oktorocket Graphics',
+                    'Social Media + Graphic Design',
+                    'A social media graphic created for Oktorocket.'
+                 )">
+
+                <img src="images/optimized/mobile-app-2-1280.webp"
+                     alt="Oktorocket graphic" srcset="images/optimized/mobile-app-2-640.webp 512w, images/optimized/mobile-app-2-1280.webp 1024w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="3000" height="3750" decoding="async" loading="lazy">
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/optimized/rocketshieldd-new-page-1-full.webp',
+                    'RocketShield',
+                    'Social Media + Graphic Design',
+                    'A promotional graphic created for Oktorocket.'
+                 )">
+
+                <img src="images/optimized/rocketshieldd-new-page-1-1280.webp"
+                     alt="Oktorocket RocketShield graphic" srcset="images/optimized/rocketshieldd-new-page-1-640.webp 512w, images/optimized/rocketshieldd-new-page-1-1280.webp 1024w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="3465" height="4332" decoding="async" loading="lazy">
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/optimized/out-now-full.webp',
+                    'Oktorocket Graphics',
+                    'Social Media + Graphic Design',
+                    'A social media graphic created for Oktorocket.'
+                 )">
+
+                <img src="images/optimized/out-now-1280.webp"
+                     alt="Oktorocket graphic" srcset="images/optimized/out-now-640.webp 512w, images/optimized/out-now-1280.webp 1024w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="4500" height="5625" decoding="async" loading="lazy">
+
+            </div>
+
+
+            <!-- PROJECT 4 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/optimized/call-period-comparison-copy-2-full.webp',
+                    'Call Period Comparison',
+                    'Social Media + Graphic Design',
+                    'A visual graphic created for Oktorocket.'
+                 )">
+
+                <img src="images/optimized/call-period-comparison-copy-2-1280.webp"
+                     alt="Oktorocket call period comparison graphic" srcset="images/optimized/call-period-comparison-copy-2-640.webp 512w, images/optimized/call-period-comparison-copy-2-1280.webp 1024w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="5580" height="6975" decoding="async" loading="lazy">
+
+            </div>
+
+
+            <!-- PROJECT 5 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/optimized/parts-margin-report-all-full.webp',
+                    'Parts Margin Report',
+                    'Social Media + Graphic Design',
+                    'A visual report graphic created for Oktorocket.'
+                 )">
+
+                <img src="images/optimized/parts-margin-report-all-1280.webp"
+                     alt="Oktorocket parts margin report graphic" srcset="images/optimized/parts-margin-report-all-640.webp 512w, images/optimized/parts-margin-report-all-1280.webp 1024w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="1080" height="1350" decoding="async" loading="lazy">
+
+            </div>
+
+
+        </div>
+
+
+        <!-- RIGHT ARROW -->
+        <button class="arrow right-arrow"
+                onclick="scrollWork(this, 1)">
+            &#10095;
+        </button>
+
+    </div>
+
+</section>
+    
+<!-- MIAD PROJECTS -->
+
+<section class="work-section"
+         style="margin-top: 100px; margin-left: 0; padding-left: 0;">
+
+    <div class="section-title"
+         style="margin-left: 0; padding-left: 0;">
+
+        <h2>MIAD Projects</h2>
+        <p>Publication Design</p>
+
+    </div>
+
+
+    <div class="carousel">
+
+        <!-- LEFT ARROW -->
+        <button class="arrow left-arrow"
+                onclick="scrollWork(this, -1)">
+            &#10094;
+        </button>
+
+
+        <div class="work-grid">
+
+
+            <!-- MAGAZINE PROJECT 1 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/optimized/screenshot-2026-08-15-at-4-05-33-pm-full.webp',
+                    'Magazine Spread',
+                    'Publication Design',
+                    'A magazine spread created as part of my publication design coursework at MIAD.'
+                 )">
+
+                <img src="images/optimized/screenshot-2026-08-15-at-4-05-33-pm-1280.webp"
+                     alt="Magazine spread" srcset="images/optimized/screenshot-2026-08-15-at-4-05-33-pm-640.webp 504w, images/optimized/screenshot-2026-08-15-at-4-05-33-pm-1280.webp 1008w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="1314" height="1668" decoding="async" loading="lazy">
+
+            </div>
+
+
+            <!-- MAGAZINE PROJECT 2 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/optimized/screenshot-2026-08-15-at-4-05-23-pm-full.webp',
+                    'Magazine Spread',
+                    'Publication Design',
+                    'A magazine spread exploring layout, typography, imagery, and visual hierarchy.'
+                 )">
+
+                <img src="images/optimized/screenshot-2026-08-15-at-4-05-23-pm-1280.webp"
+                     alt="Magazine spread" srcset="images/optimized/screenshot-2026-08-15-at-4-05-23-pm-640.webp 512w, images/optimized/screenshot-2026-08-15-at-4-05-23-pm-1280.webp 1023w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="1330" height="1664" decoding="async" loading="lazy">
+
+            </div>
+
+
+            <!-- TENNIS BOOKLET PROJECT 1 -->
+            <div class="work-piece"
+                 style="
+                    flex: 0 0 auto !important;
+                    width: fit-content !important;
+                    height: calc((100vw - 160px) / 3);
+                    background: transparent !important;
+                 "
+                 onclick="openProject(
+                    'images/optimized/screenshot-2026-08-15-at-4-16-56-pm-full.webp',
+                    'Tennis Booklet',
+                    'Publication Design',
+                    'A tennis-themed booklet created as part of my publication design coursework at MIAD.'
+                 )">
+
+                <img src="images/optimized/screenshot-2026-08-15-at-4-16-56-pm-1280.webp"
+                     alt="Tennis booklet"
+                     style="
+                        height: 100%;
+                        width: auto;
+                        max-width: none;
+                        display: block;
+                     " srcset="images/optimized/screenshot-2026-08-15-at-4-16-56-pm-640.webp 640w, images/optimized/screenshot-2026-08-15-at-4-16-56-pm-1280.webp 1280w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="2162" height="770" decoding="async" loading="lazy">
+
+            </div>
+
+
+            <!-- TENNIS BOOKLET PROJECT 2 -->
+            <div class="work-piece"
+                 style="
+                    flex: 0 0 auto !important;
+                    width: fit-content !important;
+                    height: calc((100vw - 160px) / 3);
+                    background: transparent !important;
+                 "
+                 onclick="openProject(
+                    'images/optimized/screenshot-2026-08-15-at-4-17-18-pm-full.webp',
+                    'Tennis Booklet',
+                    'Publication Design',
+                    'A spread from my tennis booklet focusing on editorial layout, typography, and image placement.'
+                 )">
+
+                <img src="images/optimized/screenshot-2026-08-15-at-4-17-18-pm-1280.webp"
+                     alt="Tennis booklet"
+                     style="
+                        height: 100%;
+                        width: auto;
+                        max-width: none;
+                        display: block;
+                     " srcset="images/optimized/screenshot-2026-08-15-at-4-17-18-pm-640.webp 640w, images/optimized/screenshot-2026-08-15-at-4-17-18-pm-1280.webp 1280w" sizes="(max-width: 500px) calc(100vw - 100px), (max-width: 800px) 45vw, 33vw" width="2168" height="770" decoding="async" loading="lazy">
+
+            </div>
+
+
+        </div>
+
+
+        <!-- RIGHT ARROW -->
+        <button class="arrow right-arrow"
+                onclick="scrollWork(this, 1)">
+            &#10095;
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- LOGO DESIGN -->
+
+<section class="work-section"
+         style="margin-top: 0px; margin-left: 0; padding-left: 0;">
+
+    <div class="section-title"
+         style="margin-left: 0; padding-left: 0;">
+
+        <h2>Logo Design</h2>
+        <p>Branding + Visual Identity</p>
+
+    </div>
+
+
+    <div class="carousel">
+
+        <!-- LEFT ARROW -->
+        <button class="arrow left-arrow"
+                onclick="scrollWork(this, -1)">
+            &#10094;
+        </button>
+
+
+        <div class="work-grid">
+
+
+            <!-- LOGO 1 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/logo-1.png',
+                    'Logo Design',
+                    'Branding + Visual Identity',
+                    'A logo design created to explore brand identity, typography, and visual communication.'
+                 )">
+
+                <img src="images/logo-1.png"
+                     alt="Logo design">
+
+            </div>
+
+
+            <!-- LOGO 2 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/logo-2.png',
+                    'Logo Design',
+                    'Branding + Visual Identity',
+                    'A logo design focused on creating a recognizable and cohesive visual identity.'
+                 )">
+
+                <img src="images/logo-2.png"
+                     alt="Logo design">
+
+            </div>
+
+
+            <!-- LOGO 3 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/logo-3.png',
+                    'Logo Design',
+                    'Branding + Visual Identity',
+                    'A branding project exploring logo development and visual identity.'
+                 )">
+
+                <img src="images/logo-3.png"
+                     alt="Logo design">
+
+            </div>
+
+
+            <!-- LOGO 4 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/logo-4.png',
+                    'Logo Design',
+                    'Branding + Visual Identity',
+                    'A logo created with an emphasis on typography, shape, and brand recognition.'
+                 )">
+
+                <img src="images/logo-4.png"
+                     alt="Logo design">
+
+            </div>
+
+
+            <!-- LOGO 5 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/logo-5.png',
+                    'Logo Design',
+                    'Branding + Visual Identity',
+                    'A visual identity project designed to communicate a clear and memorable brand.'
+                 )">
+
+                <img src="images/logo-5.png"
+                     alt="Logo design">
+
+            </div>
+
+
+        </div>
+
+
+        <!-- RIGHT ARROW -->
+        <button class="arrow right-arrow"
+                onclick="scrollWork(this, 1)">
+            &#10095;
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- FINE ART -->
+
+<section class="work-section"
+         style="margin-top: 0px; margin-left: 0; padding-left: 0;">
+
+    <div class="section-title">
+
+        <h2>Fine Art</h2>
+        <p>Traditional + Studio Art</p>
+
+    </div>
+
+
+    <div class="carousel">
+
+        <!-- LEFT ARROW -->
+        <button class="arrow left-arrow"
+                onclick="scrollWork(this, -1)">
+            &#10094;
+        </button>
+
+
+        <div class="work-grid">
+
+
+            <!-- FINE ART 1 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/fine-art-1.jpg',
+                    'Fine Art',
+                    'Traditional + Studio Art',
+                    'A traditional studio artwork exploring composition, technique, and visual expression.'
+                 )">
+
+                <img src="images/fine-art-1.jpg"
+                     alt="Fine art">
+
+            </div>
+
+
+            <!-- FINE ART 2 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/fine-art-2.jpg',
+                    'Fine Art',
+                    'Traditional + Studio Art',
+                    'A studio art piece created through an exploration of traditional materials and techniques.'
+                 )">
+
+                <img src="images/fine-art-2.jpg"
+                     alt="Fine art">
+
+            </div>
+
+
+            <!-- FINE ART 3 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/fine-art-3.jpg',
+                    'Fine Art',
+                    'Traditional + Studio Art',
+                    'A fine art piece focused on composition, form, and visual development.'
+                 )">
+
+                <img src="images/fine-art-3.jpg"
+                     alt="Fine art">
+
+            </div>
+
+
+            <!-- FINE ART 4 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/fine-art-4.jpg',
+                    'Fine Art',
+                    'Traditional + Studio Art',
+                    'A traditional artwork demonstrating experimentation with technique and visual style.'
+                 )">
+
+                <img src="images/fine-art-4.jpg"
+                     alt="Fine art">
+
+            </div>
+
+
+            <!-- FINE ART 5 -->
+            <div class="work-piece"
+                 onclick="openProject(
+                    'images/fine-art-5.jpg',
+                    'Fine Art',
+                    'Traditional + Studio Art',
+                    'A studio art project exploring visual composition and traditional art-making techniques.'
+                 )">
+
+                <img src="images/fine-art-5.jpg"
+                     alt="Fine art">
+
+            </div>
+
+
+        </div>
+
+
+        <!-- RIGHT ARROW -->
+        <button class="arrow right-arrow"
+                onclick="scrollWork(this, 1)">
+            &#10095;
+        </button>
+
+    </div>
+
+</section>
+    </section>
+
+    <!-- IMAGE POPUP -->
+
+    <div id="imageModal" class="image-modal">
+
+    <button class="modal-close" onclick="closeImage()">×</button>
+
+    <div class="modal-content">
+
+        <div class="modal-image">
+            <img id="largeImage" decoding="async" alt="Project preview">
+        </div>
+
+        <div class="modal-info">
+            <h2 id="modalTitle"></h2>
+            <p id="modalCategory"></p>
+            <p id="modalDescription"></p>
+        </div>
+
+    </div>
+
+</div>
+
+   <script>
+
+    /* CAROUSEL ARROWS */
+    function scrollWork(button, direction) {
+        const carousel = button.parentElement;
+        const grid = carousel.querySelector(".work-grid");
+        grid.scrollLeft += direction * grid.clientWidth;
+    }
+
+
+    /* OPEN PROJECT */
+    function openProject(image, title, category, description) {
+        document.getElementById("largeImage").src = image;
+        document.getElementById("modalTitle").textContent = title;
+        document.getElementById("modalCategory").textContent = category;
+        document.getElementById("modalDescription").textContent = description;
+
+        document.getElementById("imageModal").classList.add("active");
+        document.body.style.overflow = "hidden";
+    }
+
+
+    /* CLOSE PROJECT */
+    function closeImage() {
+        document.getElementById("imageModal").classList.remove("active");
+        document.body.style.overflow = "auto";
+    }
+
+
+    /* CLOSE WHEN CLICKING BACKGROUND */
+    document.getElementById("imageModal").addEventListener("click", function(event) {
+        if (event.target === this) {
+            closeImage();
+        }
+    });
+
+
+    /* CLOSE WITH ESCAPE KEY */
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            closeImage();
+        }
+    });
+
+</script>
+
+        
+
+</body>
+
+</html>
