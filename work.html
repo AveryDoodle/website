@@ -139,7 +139,7 @@
     <div class="carousel">
 
         <!-- LEFT ARROW -->
-        <button class="arrow left-arrow"
+        <button class="arrow left-arrow" type="button" aria-label="Previous photos"
                 onclick="scrollWork(this, -1)">
             &#10094;
         </button>
@@ -228,7 +228,7 @@
 
 
         <!-- RIGHT ARROW -->
-        <button class="arrow right-arrow"
+        <button class="arrow right-arrow" type="button" aria-label="Next photos"
                 onclick="scrollWork(this, 1)">
             &#10095;
         </button>
@@ -250,7 +250,7 @@
     <div class="carousel">
 
         <!-- LEFT ARROW -->
-        <button class="arrow left-arrow"
+        <button class="arrow left-arrow" type="button" aria-label="Previous photos"
                 onclick="scrollWork(this, -1)">
             &#10094;
         </button>
@@ -339,7 +339,7 @@
 
 
         <!-- RIGHT ARROW -->
-        <button class="arrow right-arrow"
+        <button class="arrow right-arrow" type="button" aria-label="Next photos"
                 onclick="scrollWork(this, 1)">
             &#10095;
         </button>
@@ -365,7 +365,7 @@
     <div class="carousel">
 
         <!-- LEFT ARROW -->
-        <button class="arrow left-arrow"
+        <button class="arrow left-arrow" type="button" aria-label="Previous photos"
                 onclick="scrollWork(this, -1)">
             &#10094;
         </button>
@@ -462,7 +462,7 @@
 
 
         <!-- RIGHT ARROW -->
-        <button class="arrow right-arrow"
+        <button class="arrow right-arrow" type="button" aria-label="Next photos"
                 onclick="scrollWork(this, 1)">
             &#10095;
         </button>
@@ -489,7 +489,7 @@
     <div class="carousel">
 
         <!-- LEFT ARROW -->
-        <button class="arrow left-arrow"
+        <button class="arrow left-arrow" type="button" aria-label="Previous photos"
                 onclick="scrollWork(this, -1)">
             &#10094;
         </button>
@@ -577,7 +577,7 @@
 
 
         <!-- RIGHT ARROW -->
-        <button class="arrow right-arrow"
+        <button class="arrow right-arrow" type="button" aria-label="Next photos"
                 onclick="scrollWork(this, 1)">
             &#10095;
         </button>
@@ -604,7 +604,7 @@
     <div class="carousel">
 
         <!-- LEFT ARROW -->
-        <button class="arrow left-arrow"
+        <button class="arrow left-arrow" type="button" aria-label="Previous photos"
                 onclick="scrollWork(this, -1)">
             &#10094;
         </button>
@@ -692,7 +692,7 @@
 
 
         <!-- RIGHT ARROW -->
-        <button class="arrow right-arrow"
+        <button class="arrow right-arrow" type="button" aria-label="Next photos"
                 onclick="scrollWork(this, 1)">
             &#10095;
         </button>
@@ -730,7 +730,17 @@
     function scrollWork(button, direction) {
         const carousel = button.parentElement;
         const grid = carousel.querySelector(".work-grid");
-        grid.scrollLeft += direction * grid.clientWidth;
+        const pieces = [...grid.querySelectorAll(".work-piece")];
+        const current = grid.scrollLeft;
+        const max = grid.scrollWidth - grid.clientWidth;
+        const positions = pieces.map(piece => piece.offsetLeft - pieces[0].offsetLeft);
+        const target = direction > 0
+            ? positions.find(position => position > current + 1) ?? max
+            : positions.reverse().find(position => position < current - 1) ?? 0;
+        grid.scrollTo({
+            left: Math.max(0, Math.min(max, target)),
+            behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"
+        });
     }
 
 
