@@ -15,6 +15,12 @@ Instructions: https://docs.github.com/en/pages/getting-started-with-github-pages
 Cloudflare Pages is another free option, including for a private GitHub repository: import the repository, choose no framework, leave the build command blank, and use `.` as the output directory.
 Instructions: https://developers.cloudflare.com/pages/framework-guides/deploy-anything/
 
+## Editing project titles and descriptions
+
+Open `projects.js`. Each project has a title, category, description, and optional year and tools. Change the text inside quotes, keeping the `id` and `image` fields unchanged. Leave year or tools empty to hide those details. Use `\n` inside a description to start a new paragraph.
+
+Commit or upload the edited `projects.js` to the root of the GitHub repository on `main`. GitHub Pages will publish the changes automatically. Click any Work image to see its enlarged image and details; Enter or Space also opens a focused image, and Escape closes it.
+
 ## Image optimization
 
 Original images are preserved. Pages use responsive 640px/1280px WebP copies; project popups load full-resolution WebP images only when opened. Work images use native lazy loading. Layout and CSS are unchanged.
