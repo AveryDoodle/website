@@ -58,8 +58,11 @@
 }
 
 .work-grid {
+    --work-columns: 3;
+    --work-gap: 18px;
+    container-type: inline-size;
     display: flex;
-    gap: 18px;
+    gap: var(--work-gap);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
@@ -95,10 +98,24 @@
     flex: 0 0 calc((100% - 36px) / 3);
     width: 100%;
     aspect-ratio: 4 / 5;
+    height: calc((100cqw - (var(--work-columns) - 1) * var(--work-gap)) / var(--work-columns) * 5 / 4);
     overflow: hidden;
     cursor: pointer;
     background: #eeeeee;
     scroll-snap-align: start;
+}
+
+.work-piece-wide {
+    flex: 0 0 auto;
+    width: auto;
+    aspect-ratio: auto;
+    background: transparent;
+}
+
+.work-piece-wide img {
+    width: auto;
+    max-width: none;
+    object-fit: contain;
 }
 
 .work-piece img {
@@ -183,7 +200,8 @@
     }
 
     .work-grid {
-        gap: 10px;
+        --work-columns: 2;
+        --work-gap: 10px;
     }
 
     .work-piece {
@@ -194,6 +212,10 @@
 
 
 @media (max-width: 500px) {
+
+    .work-grid {
+        --work-columns: 1;
+    }
 
     .work-piece {
         flex-basis: 100%;
@@ -305,4 +327,30 @@
 
     z-index: 1000;
     pointer-events: none;
+}
+
+.contact-details {
+    padding: 0 50px 100px;
+    display: grid;
+    gap: 48px;
+}
+
+.contact-details h2 {
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666666;
+}
+
+.contact-details a {
+    color: #111111;
+    font-size: clamp(24px, 4vw, 52px);
+    line-height: 1.2;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 8px;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 800px) {
+    .contact-details { padding: 0 25px 70px; }
 }

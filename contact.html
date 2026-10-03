@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Avery McAllister</title>
+    
+     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #111111;
+        }
+
+        /* Navigation */
+        nav {
+            width: 100%;
+            padding: 30px 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #111111;
+            font-size: 15px;
+            font-weight: 500;
+            transition: opacity 0.2s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.5;
+        }
+
+        /* Homepage */
+        .hero {
+            height: calc(100vh - 90px);
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .hero h1 {
+            font-size: clamp(80px, 13vw, 200px);
+            line-height: 0.85;
+            font-weight: 700;
+            letter-spacing: -7px;
+        }
+
+        /* Optional subtitle */
+        .hero p {
+            margin-top: 30px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 25px;
+                justify-content: flex-start;
+            }
+
+            nav ul {
+                gap: 18px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .hero {
+                padding: 0 25px;
+            }
+
+            .hero h1 {
+                font-size: 18vw;
+                letter-spacing: -3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+             <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact-page">
+        <header class="work-header">
+            <h1>CONTACT</h1>
+            <p>Have a project in mind? Let’s connect.</p>
+        </header>
+        <section class="contact-details" aria-label="Contact details">
+            <div>
+                <h2>Email</h2>
+                <a href="mailto:avery@bradandsylver.com">avery@bradandsylver.com</a>
+            </div>
+            <div>
+                <h2>LinkedIn</h2>
+                <a href="https://www.linkedin.com/in/avery-mcallister">Avery McAllister ↗</a>
+            </div>
+        </section>
+    </main>
+
+     <img src="images/optimized/avery-1280.webp" class="corner-logo" alt="Avery McAllister logo" srcset="images/optimized/avery-640.webp 640w, images/optimized/avery-1280.webp 1280w" sizes="500px" width="8000" height="4500" decoding="async">
+
+</body>
+</html>
+
+

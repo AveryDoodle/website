@@ -23,6 +23,5 @@ After adding images, run `python3 scripts/optimize-images.py` with Pillow instal
 
 ## Content still needed before launch
 
-- `contact.html` is empty.
 - Work references `images/logo-1.png` through `logo-5.png` and `images/fine-art-1.jpg` through `fine-art-5.jpg`, which are missing.
 - Resume links to `images/Avery-McAllister-Resume.pdf`, which is missing.
