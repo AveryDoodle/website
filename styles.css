@@ -1,16 +1,40 @@
+:root { --page-gutter: clamp(24px, 5vw, 80px); }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; background: #ffffff; color: #111111; }
+nav { padding: 30px var(--page-gutter); display: flex; justify-content: flex-end; align-items: center; }
+nav ul { list-style: none; display: flex; gap: 35px; flex-wrap: wrap; }
+nav a { text-decoration: none; color: #111111; font-size: 15px; font-weight: 500; transition: opacity 0.2s ease; }
+nav a:hover { opacity: 0.5; }
+
+.home-page { min-height: 100svh; display: flex; flex-direction: column; }
+.hero { flex: 1; display: flex; align-items: center; padding: 45px var(--page-gutter) 70px; }
+.hero > div { width: 100%; }
+.hero h1 { font-size: clamp(32px, calc((100vw - 2 * var(--page-gutter)) / 6.5), 200px); line-height: 0.9; font-weight: 700; letter-spacing: -0.035em; }
+.hero p { margin-top: 30px; font-size: 18px; line-height: 1.6; letter-spacing: 1px; max-width: 650px; }
+
+@media (max-width: 800px) {
+    :root { --page-gutter: 24px; }
+    nav { padding-block: 25px; justify-content: flex-start; }
+    nav ul { gap: clamp(12px, 3vw, 18px); }
+    nav a { font-size: 13px; }
+    .hero { padding-block: 35px 60px; }
+    .hero p { margin-top: 24px; font-size: 16px; letter-spacing: 0; max-width: 360px; }
+}
+
 /* =========================
    WORK PAGE
 ========================= */
 
 .work-header {
-    padding: 70px 50px 70px;
+    padding: 70px var(--page-gutter);
 }
 
 .work-header h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(70px, 11vw, 160px);
+    font-size: clamp(42px, 11vw, 160px);
     line-height: 0.85;
-    letter-spacing: -6px;
+    letter-spacing: -0.04em;
     font-weight: 700;
     margin: 0 0 30px 0;
 }
@@ -27,8 +51,10 @@
 /* PROJECT SECTIONS */
 
 .work-section {
-    padding: 0 50px 100px;
+    padding: 0 var(--page-gutter) 100px;
 }
+
+.work-section .work-section { padding-inline: 0; }
 
 .section-title {
     margin-bottom: 25px;
@@ -244,11 +270,11 @@
 @media (max-width: 800px) {
 
     .work-header {
-        padding: 50px 25px 50px;
+        padding: 50px var(--page-gutter);
     }
 
     .work-section {
-        padding: 0 25px 70px;
+        padding: 0 var(--page-gutter) 70px;
     }
 
     .section-title h2 {
@@ -288,8 +314,7 @@
 ========================= */
 
 .about-page {
-     padding-left: 70px;
-    padding-right: 70px;
+    padding: 0;
 }
 
 
@@ -324,6 +349,7 @@
 /* PARAGRAPH + IMAGE */
 
 .about-content {
+    padding: 0 var(--page-gutter) 80px;
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 100px;
@@ -349,7 +375,7 @@
 @media (max-width: 800px) {
 
     .about-page {
-        padding: 0 25px 60px;
+        padding: 0;
     }
 
     .about-heading {
@@ -376,7 +402,7 @@
     right: 0px;
     bottom: 0px;
 
-    width: 500px;
+    width: min(500px, 100vw);
     height: auto;
 
     opacity: 0.15;
@@ -386,7 +412,7 @@
 }
 
 .contact-details {
-    padding: 0 50px 100px;
+    padding: 0 var(--page-gutter) 100px;
     display: grid;
     gap: 48px;
 }
@@ -408,5 +434,18 @@
 }
 
 @media (max-width: 800px) {
-    .contact-details { padding: 0 25px 70px; }
+    .contact-details { padding: 0 var(--page-gutter) 70px; }
+}
+
+.resume-intro { padding: 20px var(--page-gutter) 60px; max-width: 950px; }
+.resume-intro h2 { font-size: clamp(28px, 5vw, 70px); line-height: 1; letter-spacing: -0.04em; margin-bottom: 30px; }
+.resume-intro p { font-size: 18px; line-height: 1.5; max-width: 600px; }
+.resume-container { padding: 30px var(--page-gutter) 120px; }
+.resume-placeholder { width: 100%; min-height: 700px; border: 1px solid #111111; display: flex; justify-content: center; align-items: center; text-align: center; }
+.resume-placeholder p { font-size: 15px; letter-spacing: 1px; }
+.resume-download { display: inline-block; margin-top: 25px; color: #111111; text-decoration: none; font-size: 15px; border-bottom: 1px solid #111111; padding-bottom: 4px; }
+.resume-download:hover { opacity: 0.5; }
+@media (max-width: 800px) {
+    .resume-container { padding-bottom: 80px; }
+    .resume-placeholder { min-height: 500px; }
 }
