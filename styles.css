@@ -458,3 +458,7 @@ nav a:hover { opacity: 0.5; }
     background: #ffffff;
 }
 .work-piece-art img { object-fit: contain; }
+
+/* Keep the extracted logos at a smaller, clearer display size. */
+.work-piece-logo { background: #ffffff; }
+.work-piece-logo img { object-fit: contain; padding: 20%; }
