@@ -449,3 +449,7 @@ nav a:hover { opacity: 0.5; }
     .resume-container { padding-bottom: 80px; }
     .resume-placeholder { min-height: 500px; }
 }
+
+/* Show the complete fine art and architectural illustrations. */
+.work-piece-art { background: #ffffff; }
+.work-piece-art img { object-fit: contain; }
