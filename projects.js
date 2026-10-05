@@ -185,7 +185,7 @@ window.portfolioProjects = [
         "id": "fine-art-1",
         "image": "images/optimized/fine-art-1-full.webp",
         "title": "Frog Drawing",
-        "category": "Fine Art + Illustration",
+        "category": "Digital + Fine Art",
         "description": "",
         "year": "",
         "tools": ""
@@ -194,7 +194,7 @@ window.portfolioProjects = [
         "id": "fine-art-2",
         "image": "images/optimized/fine-art-2-full.webp",
         "title": "Lizard Drawing",
-        "category": "Fine Art + Illustration",
+        "category": "Digital + Fine Art",
         "description": "",
         "year": "",
         "tools": ""
@@ -203,7 +203,7 @@ window.portfolioProjects = [
         "id": "fine-art-3",
         "image": "images/optimized/fine-art-3-full.webp",
         "title": "Dog Drawing",
-        "category": "Fine Art + Illustration",
+        "category": "Digital + Fine Art",
         "description": "",
         "year": "",
         "tools": ""
@@ -212,7 +212,7 @@ window.portfolioProjects = [
         "id": "fine-art-4",
         "image": "images/optimized/fine-art-4-full.webp",
         "title": "House Illustration 1",
-        "category": "Fine Art + Illustration",
+        "category": "Digital + Fine Art",
         "description": "",
         "year": "",
         "tools": ""
@@ -221,7 +221,7 @@ window.portfolioProjects = [
         "id": "fine-art-5",
         "image": "images/optimized/fine-art-5-full.webp",
         "title": "House Illustration 2",
-        "category": "Fine Art + Illustration",
+        "category": "Digital + Fine Art",
         "description": "",
         "year": "",
         "tools": ""
@@ -230,7 +230,7 @@ window.portfolioProjects = [
         "id": "fine-art-6",
         "image": "images/optimized/fine-art-6-full.webp",
         "title": "House Illustration 3",
-        "category": "Fine Art + Illustration",
+        "category": "Digital + Fine Art",
         "description": "",
         "year": "",
         "tools": ""

@@ -451,5 +451,10 @@ nav a:hover { opacity: 0.5; }
 }
 
 /* Show the complete fine art and architectural illustrations. */
-.work-piece-art { background: #ffffff; }
+.work-piece-art {
+    flex: 0 0 auto;
+    aspect-ratio: auto;
+    width: calc((100cqw - (var(--work-columns) - 1) * var(--work-gap)) / var(--work-columns) * 5 / 4 * var(--art-ratio));
+    background: #ffffff;
+}
 .work-piece-art img { object-fit: contain; }
