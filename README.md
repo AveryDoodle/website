@@ -30,4 +30,7 @@ After adding images, run `python3 scripts/optimize-images.py` with Pillow instal
 ## Content still needed before launch
 
 - Work references `images/logo-1.png` through `logo-5.png` and `images/fine-art-1.jpg` through `fine-art-5.jpg`, which are missing.
-- Resume links to `images/Avery-McAllister-Resume.pdf`, which is missing.
+
+## Updating the resume
+
+The resume page displays `images/optimized/avery-resume-preview.webp` and provides view and download links to `images/Avery-McAllister-Resume.pdf`. Replace both files when updating the resume, and publish them with `resume.html` and `styles.css`.

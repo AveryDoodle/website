@@ -441,13 +441,17 @@ nav a:hover { opacity: 0.5; }
 .resume-intro h2 { font-size: clamp(28px, 5vw, 70px); line-height: 1; letter-spacing: -0.04em; margin-bottom: 30px; }
 .resume-intro p { font-size: 18px; line-height: 1.5; max-width: 600px; }
 .resume-container { padding: 30px var(--page-gutter) 120px; }
-.resume-placeholder { width: 100%; min-height: 700px; border: 1px solid #111111; display: flex; justify-content: center; align-items: center; text-align: center; }
-.resume-placeholder p { font-size: 15px; letter-spacing: 1px; }
-.resume-download { display: inline-block; margin-top: 25px; color: #111111; text-decoration: none; font-size: 15px; border-bottom: 1px solid #111111; padding-bottom: 4px; }
-.resume-download:hover { opacity: 0.5; }
+.resume-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 30px; }
+.resume-button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 14px 22px; border: 1px solid #111111; color: #111111; text-decoration: none; font-size: 14px; font-weight: 600; transition: background 0.2s ease, color 0.2s ease; }
+.resume-download { background: #111111; color: #ffffff; }
+.resume-download:hover { background: #333333; }
+.resume-view:hover { background: #f1f1f1; }
+.resume-button:focus-visible, .resume-preview:focus-visible { outline: 3px solid #185a73; outline-offset: 5px; }
+.resume-preview { display: block; width: 100%; max-width: 900px; border: 1px solid #dddddd; }
+.resume-preview img { display: block; width: 100%; height: auto; }
 @media (max-width: 800px) {
     .resume-container { padding-bottom: 80px; }
-    .resume-placeholder { min-height: 500px; }
+    .resume-actions { gap: 12px; }
 }
 
 /* Show the complete fine art and architectural illustrations. */
