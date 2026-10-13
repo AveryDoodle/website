@@ -320,6 +320,8 @@ nav a:hover { opacity: 0.5; }
     padding: 0;
 }
 
+.about-page .work-header { padding-bottom: 0; }
+
 
 /* ABOUT */
 
