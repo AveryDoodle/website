@@ -469,3 +469,26 @@ nav a:hover { opacity: 0.5; }
 /* Keep the extracted logos at a smaller, clearer display size. */
 .work-piece-logo { background: #ffffff; }
 .work-piece-logo img { object-fit: contain; padding: 20%; }
+
+.modal-navigation {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+.modal-navigation button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal-navigation button:hover { background: #333; }
+.modal-navigation button:focus-visible, .modal-close:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+#modalPosition { color: #ccc; font-size: 14px; }
