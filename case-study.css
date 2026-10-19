@@ -1,0 +1,21 @@
+
+.case-study { max-width: 1440px; margin: auto; padding: 50px var(--page-gutter) 100px; }
+.case-study a { color: inherit; text-underline-offset: 4px; }
+.case-back { display: inline-block; margin-bottom: 48px; font-size: 14px; }
+.case-eyebrow { font-size: 13px; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 20px; }
+.case-study h1 { font-size: clamp(64px, 11vw, 150px); line-height: .9; letter-spacing: -.055em; }
+.case-intro { max-width: 680px; font-size: clamp(20px, 2.3vw, 30px); line-height: 1.4; margin-top: 30px; }
+.case-note { font-size: 14px; line-height: 1.6; color: #555; margin-top: 20px; }
+.case-lead { margin: 50px 0 70px; }
+.case-lead img { width: 100%; height: auto; display: block; background: #f4f4f4; }
+.case-lead figcaption { margin-top: 12px; font-size: 13px; color: #555; line-height: 1.5; }
+.case-layout { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 65px; }
+.case-layout aside { display: flex; flex-direction: column; gap: 18px; align-self: start; }
+.case-layout aside a { font-size: 14px; }
+.case-layout section { border-top: 1px solid #ddd; padding-top: 24px; margin-bottom: 55px; scroll-margin-top: 24px; }
+.case-layout h2 { font-size: clamp(26px, 3vw, 38px); letter-spacing: -.03em; margin-bottom: 22px; }
+.case-layout ul, .case-layout ol { padding-left: 22px; }
+.case-layout li, .case-image-plan > p { font-size: 17px; line-height: 1.65; margin-bottom: 15px; }
+.case-image-plan li p { font-size: 15px; color: #555; }
+.case-study a:focus-visible { outline: 3px solid #185a73; outline-offset: 5px; }
+@media(max-width: 800px) { .case-study { padding-top: 30px; } .case-layout { grid-template-columns: 1fr; gap: 35px; } .case-layout aside { gap: 14px; } .case-back { margin-bottom: 32px; } .case-lead { margin-block: 35px 45px; } }
